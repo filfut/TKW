@@ -1,0 +1,117 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header.background {
+    background: linear-gradient( #0a6fa3, lightblue);
+}
+
+ul.menu {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+/*Chỉnh font*/
+.font-size {
+    font-size: 23px;
+    color: rgb(0, 79, 140);
+    line-height: 20px;
+}
+/*Chỉnh hình*/
+.images {
+    box-sizing: border-box;
+    max-width: 100%;
+    display: inline;
+    aspect-ratio: auto;
+    overflow-y: clip;
+    overflow-x: clip;
+    vertical-align: middle;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 300px; /* Hoặc chiều cao cụ thể */
+}
+/*main*/
+.style1 {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    overflow-x: auto;
+}
+.table {
+    background-color: rgb(241, 241, 241);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    display: block;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.list   {
+    box-sizing: border-box;
+    color: rgb(51, 122, 183);
+    cursor: pointer;
+    display: list-item;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+    unicode-bidi: isolate;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*footer*/
+footer {
+    background-color: #0a6fa3;
+    padding: 2rem;
+    color: white;
+    list-style-type: none;
+}
+/*chú thích hình ảnh*/
+p > em {
+    font-size: 10px;
+}
