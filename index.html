@@ -3,189 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang giới thiệu</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tool.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:600px)" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/go_top.js"></script>
+    <script src="js/list_click.js"></script>
+    <script src="js/search.js"></script>    
 </head>
 <body>
-    <header class="background"> 
+    <header class="background flex"> 
         <ul class="menu flex">
             <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li class="sub">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <ul class="submenu menu flex">
+                    <li><a href="index2.html">Du lịch - Ăn uống</a></li>
+                    <li><a href="index3.html">Hỏi-Đáp</a></li>
+                </ul>      
+            </li> 
+        </ul>
+        <ul class="menu flex">
+            <input class="input-form" id="searchInput" type="search" placeholder="Tìm kiếm..." />
+            <li><a href="#" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></a></li>  
         </ul>
     </header>
     <main>
+        <section class="slider">
+            <img src="images/slider/banner1.jpg" alt="Banner 1" />
+            <img src="images/slider/banner2.jpg" alt="Banner 2" />
+            <img src="images/slider/banner3.jpg" alt="Banner 3" />
+            <img src="images/slider/banner4.jpg" alt="Banner 4" />
+        </section> 
         <section class="style1">
-            <header>
-                <h1 class="font-size">Giới thiệu du lịch của thành phố Hồ Chí Minh</h1>
-            </header>
+            <h1 class="font-size">Giới thiệu sơ lược về thành phố Hồ Chí Minh</h1>
             <div>
-		        Hãy cùng bắt đầu khám phá mảnh đất Sài Thành cực kỳ thú vị thông qua những địa điểm du lịch nổi tiếng của thành phố Hồ Chí Minh mà bạn không nên bỏ qua!	
+                <h2>1) Vị trí địa lý</h2>
+                <p>Thành phố Hồ Chí Minh nằm ở miền Nam của đất nước Việt Nam, cách trung tâm thành phố Hà Nội khoảng 1.730km tính theo đường bộ. Ngoài ra trung tâm thành phố Hồ Chí Minh nằm cách bờ biển Đông khoảng 50 km theo đường chim bay, khoảng cách không quá xa.</p>
+                <p>Với vị trí là tâm điểm của Đông Nam Á, thành phố Hồ Chí Minh là một đầu mối giao thông quan trọng cả về đường bộ, đường thủy và đường hàng không. Nhờ điều này mà thành phố đã giúp nối liền các tỉnh trong vùng và trở thành một cửa ngõ quốc tế cực kỳ quan trọng.</p>
+                <h2>2) Đặc điểm địa hình</h2>
+                <p>Về địa hình của thành phố Hồ Chí Minh, nằm trong vùng chuyển tiếp giữa miền Đông Nam Bộ và Đồng bằng sông Cửu Long. Chính yếu tố đó đã tạo cho thành phố địa hình thấp dần từ Bắc xuống Nam và từ Tây sang Đông. Vùng cao của thành phố nằm ở phía bắc – Đông Bắc và một phần của phía Tây Bắc, cao trung bình 10 đến 25m. Nằm xen kẽ với vùng địa hình cao này có một số gò đồi, cao nhất lên tới 32m như: đồi Long Bình ở Thủ Đức,…</p>
+                <p>Còn vùng trũng của thành phố nằm ở phía tây nam và đông nam, có độ cao trung bình khoảng 1m, nơi thấp nhất có thể là 0.5m. Các khu vực trung tâm, một phần thành phố Thủ Đức, toàn bộ huyện Hóc Môn và Quận 12 có độ cao trung bình khoảng 5m đến 10m. Thành phố Hồ Chí Minh nằm ở tọa độ có 10°10′ – 10°38′ Bắc và 106°22′ – 106°54′ Đông. Phía Bắc tiếp giáp với tỉnh Bình Dương, phía tây giáp với tỉnh Tây Ninh và tỉnh Long An, phía đông giáp với Đồng Nai và Bà Rịa – Vũng Tàu, phía nam giáp với biển Đông và tỉnh Tiền Giang.</p>
+                <h2>3) Lịch sử ra đời của TP Hồ Chí Minh</h2>
+                <p>Khi nhắc tên thành phố Hồ Chí Minh (tên gọi cũ là Sài Gòn) ai cũng phải tự hào với một thành phố lớn nhất Việt Nam về dân số và kinh tế, đứng thứ hai về diện tích. Vùng đất này ban đầu được gọi là Prey Nokor, sau đó được hình thành nhờ công cuộc khai phá miền Nam của nhà Nguyễn. Năm 1698, Nguyễn Hữu Cảnh cho lập phủ Gia Định, bắt đầu đánh dấu cho sự ra đời của thành phố. Khi người Pháp tiến vào Đông Dương, để phục vụ công cuộc khai thác thuộc địa, thành phố Sài Gòn được thành lập.</p>
+                <p>Dần dần thành phố nhanh chóng phát triển, trở thành một trong hai đô thị quan trọng nhất của nước Việt Nam. Cùng với Phnom Penh của Campuchia, Sài Gòn được người Pháp mệnh danh là Hòn ngọc Viễn Đông, nổi bật nhất trong số những thuộc địa của thực dân Pháp. Sài Gòn cũng là thủ đô của Liên bang Đông Dương giai đoạn ở 1887 – 1901 (về sau Pháp chuyển thủ đô Liên bang Đông Dương ra ngoài Hà Nội).</p>
+                <p>Năm 1949, Sài Gòn trở thành thủ đô của Quốc gia Việt Nam – một chính thể thuộc Liên bang Đông Dương, sau này là thủ đô của Việt Nam Cộng hòa. Đến năm 1955, Việt Nam Cộng hòa được thành lập, Sài Gòn khi đó là thành phố lớn nhất tại miền Nam Việt Nam đã được chọn làm thủ đô với tên gọi chính thức Đô Thành Sài Gòn. Kể từ đó, thành phố này trở thành một trong những đô thị quan trọng của miền Nam Việt Nam.</p>
+                <p>Sau khi Việt Nam Cộng hòa sụp đổ trong sự kiện 30 tháng 4 năm 1975, lãnh thổ Việt Nam được hoàn toàn thống nhất. Ngày 2 tháng 7 năm 1976, Quốc hội nước Việt Nam thống nhất quyết định đổi tên thành phố Sài Gòn thành Thành phố Hồ Chí Minh (TP HCM ), theo tên vị Chủ tịch nước đầu tiên của Việt Nam Dân chủ Cộng hòa.</p>
+                <h2>4) Thành phố Hồ Chí Minh có bao nhiêu quận huyện?</h2>
+                <p>Là một trung tâm kinh tế – văn hóa – giáo dục, thành phố Hồ Chí Minh luôn không ngừng phát triển, bứt phá mạnh mẽ và trở thành một trong những đại đô thị lớn nhất cả nước. Vậy thành phố Hồ Chí Minh cao bao nhiêu thành phố, bao nhiêu quận và bao nhiêu huyện, đó chắc cũng là câu hỏi của nhiều người. Nếu như xét về mặt hành chính thì thành phố Hồ Chí Minh được chia thành 22 quận huyện, trong đó có 1 thành phố, 16 quận, 5 huyện.</p>
+                <p>Các thành phố, quận huyện thuộc thành phố Hồ Chí Minh bao gồm: Thành phố Thủ Đức, Quận 1, Quận 3, Quận 4, Quận 5, Quận 6, Quận 7, Quận 8, Quận 10, Quận 11, Quận 12, Quận Bình Thạnh, Quận Bình Tân, Quận Gò Vấp, Quận Phú Nhuận, Quận Tân Bình, Quận Tân Phú, Huyện Bình Chánh, Huyện Cần Giờ, Huyện Củ Chi, Huyện Hóc Môn và Huyện Nhà Bè. Thành phố Thủ Đức là thành phố đầu tiên và cũng là thành phố duy nhất thuộc đơn vị hành chính thành phố thuộc thành phố trực thuộc trung ương.  </p>
+                <p>Thành phố Thủ Đức chính là sự gộp lại của 3 quận: Quận 2, quận 9 và quận Thủ Đức nên mới lớn như vậy. Trong số các quận huyện trên thì quận 4, quận 5, quận 3 là 3 quận có diện tích nhỏ nhất, lần lượt là 4.18 km2, 4,27km2 và 4.92km2. Huyện Cần Giờ là huyện có diện tích lớn nhất, lên tới 704.22 km2, gấp 2.8 lần diện tích của huyện Bình Chánh (252.69 km2) và gấp 15 lần so với diện tích của quận Thủ Đức cũ (47.7 km2).</p>
+                <p>Thành phố Hồ Chí Minh có tổng diện tích là 2.095 km2, thì diện tích của 5 huyện ngoại thành đã chiếm hơn 3/4 (1.601 km2) tổng diện tích rồi. Từ đó có thể thấy được thành phố Hồ Chí Minh là một thành phố phát triển cực mạnh, luôn là nhân tố quan trọng cho sự phát triển của đất nước.</p>
             </div>
-            <div class="table">
-                <h3>Mục lục các địa điểm</h3>
-                <ul style="list-style: none;">
-                    <li class="list"><a href="#cho_ben_thanh_h2">1.Chợ Bến Thành</a></li>
-                    <li class="list"><a href="#dinh_doc_lap_h2">2.Dinh Độc Lập</a></li>
-                    <li class="list"><a href="#nha_tho_duc_ba_h2">3.Nhà thờ Đức Bà</a></li>
-                    <li class="list"><a href="#bao_tang_lich_su_vn_h2">4.Bảo tàng lịch sử Viêt Nam</a></li>
-                    <li class="list"><a href="#dia_dao_cu_chi_h2">5.Địa đạo Củ Chi</a></li>
-                    <li class="list"><a href="#pho_di_bo_h2">6.Phố đi bộ Nguyễn Huệ</a></li>
-                    <li class="list"><a href="#thao_cam_vien_h2">7.Thảo Cầm Viên</a></li>
-                    <li class="list"><a href="#bao_tang_3d_h2">8.Bảo tàng tranh 3D Artinus</a></li>
-                    <li class="list"><a href="#toa_nha_bitexco_h2">9.Tòa nhà Bitexco</a></li>
-                    <li class="list"><a href="#cong_vien_nuoc_dam_sen_h2">10.Công viên nước Đầm Sen</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2 id="cho_ben_thanh_h2" class="font-size">Chợ Bến Thành</h2>
-                <p>Đây là một trong những địa điểm du lịch Thành phố Hồ Chí Minh nổi tiếng nhất nằm ngay trung tâm thành phố và luôn tấp nập người ra vào mua bán, du khách check in mỗi ngày.</p>
-                <p>
-                    <a href="index2.html#">Chợ Bến Thành</a> buôn bán tất tần tật những mặt hàng từ thực phẩm, vải vóc, quần áo, đồ gia dụng, đặc sản Sài Gòn,… và quan trọng là khu ẩm thực cực kỳ hấp dẫn ở chợ và những góc check in ấn tượng sẽ làm bạn luôn muốn lưu lại nơi đây thật lâu.
-                </p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Đường Lê Lợi, phường Bến Thành, quận 1.</li>
-                    <li>Giờ mở cửa: 7h - 20h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/ben_thanh.jpg" alt="Chợ Bến Thành" class="images">
-                </p>
-                <p style="text-align: center;"><em>Chợ Bến Thành(Wikipedia)</em></p>
-
-                <h2 id="dinh_doc_lap_h2" class="font-size">Dinh Độc Lập</h2>
-                <p>
-                    <a href="index3.html">Dinh Độc Lập</a>  hay còn gọi là hội trường Thống Nhất, đây là một công trình được xây dựng bởi người Pháp, từ thời Pháp thuộc. Đối với người dân Sài Gòn, Dinh Độc Lập là một di tích lịch sử mang ý nghĩa hòa bình và toàn vẹn lãnh thổ. Nơi đây đã được công nhận là 1 trong 10 di tích quốc gia đặc biệt của Việt Nam vào năm 2009. 
-                </p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: 135 Đường Nam Kỳ Khởi Nghĩa, phường Bến Nghé, quận 1.</li>
-                    <li>Giờ mở cửa: 7h30 - 11h; 13h30 - 17h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/dinh_doc_lap.jpg" alt="Dinh Độc Lập" class="images">
-                </p>
-                <p style="text-align: center;"><em>Dinh Độc Lập(Wikipedia)</em></p>
-
-                <h2 id="nha_tho_duc_ba_h2" class="font-size">Nhà thờ Đức Bà</h2>
-                <p>
-                    <a href="">Nhà thờ Đức Bà</a> là địa điểm du lịch thành phố Hồ Chí Minh mà bạn nhất định phải ghé đến. Nhà thờ Đức Bà là một công trình kiến trúc độc đáo mang đậm phong cách Châu Âu, là nơi sinh hoạt và tổ chức các buổi Thánh lễ cho những người theo đạo Công giáo ở Sài Thành.   
-                </p>
-                <p>Ghé đến tham quan nhà thờ Đức Bà, bạn có thể đến vào buổi sáng để có thể ngắm được trọn vẹn vẻ đẹp của nhà thờ dưới ánh sáng ban ngày, check in ở mọi ngóc ngách trong nhà thờ đậm chất Gothic,… đặc biệt nhà thờ luôn đón chào những du khách, người dân và bất kỳ ai đến đây để nghe giảng đạo.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: 01 Công xã Paris, phường Bến Nghé, quận 1.</li>
-                    <li>Giờ mở cửa: 6h - 20h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/nha_tho_duc_ba.jpg" alt="Nhà thờ Đức Bà" class="images">
-                </p>
-                <p style="text-align: center;"><em>Nhà thờ Đức Bà(Wikipedia)</em></p>
-
-                <h2 id="bao_tang_lich_su_vn_h2" class="font-size">Bảo tàng lịch sử Việt Nam</h2>
-                <p>Bảo tàng lịch sử Việt Nam được xây dựng và hoạt động từ những năm đầu thế kỷ 20, là nơi lưu giữ và bảo tồn những hình ảnh, cổ vật từ thuở sơ khai đến nay. Bảo tàng lịch sử Việt Nam thu hút phần lớn những du khách yêu lịch sử và kiến trúc pha trộn giữa 2 phong cách Á – Âu độc đáo.</p>   
-                <p>Ngoài là nơi lưu giữ nét văn hoa truyền thống của đất nước, bảo tàng lịch sử Việt Nam còn là một trong những điểm du lịch thành phố Hồ Chí Minh ấn tượng với những góc check in đẹp. Đây luôn là điểm đến thú vị trong những lịch trình của tour du lịch Hồ Chí Minh được yêu thích nhất.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Số 2 đường Nguyễn Bỉnh Khiêm, phường Bến Nghé, quận 1.</li>
-                    <li>Giờ mở cửa: 8h - 17h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/bao_tang_lich_su_vn.jpg" alt="Bảo tàng lịch sử Việt Nam" class="images">
-                </p>
-                <p style="text-align: center;"><em>Bảo tàng lịch sử Việt Nam(Wikipedia)</em></p>
-
-                <h2 id="dia_dao_cu_chi_h2" class="font-size">Địa đạo Củ Chi</h2>
-                <p>
-                    <a href="">Địa đạo Củ Chi</a>  là di tích lịch sử nằm ở ngoại ô, cách trung tâm Tp.HCM khoảng 70km. Đây là một trong những điểm nên đến ở Sài Gòn được yêu thích, đặc biệt là đối với các du khách nước ngoài.
-                </p>
-                <p>Nơi đây là di tích quốc gia đặc biệt, gắn liền với lịch sử chiến tranh Việt Nam, từng là căn cứ địa quan trọng và cũng là nơi sinh hoạt chung bao gồm bệnh xá, nhà bếp, nơi làm việc,… của quân đội ta trong cuộc kháng chiến chống quân xâm lược, giành lại toàn vẹn lãnh thổ.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Ấp Bến Đình, xã Nhuận Đức, huyện Củ Chi.</li>
-                    <li>Giờ mở cửa: 8h - 17h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/dia_dao_cu_chi.jpg" alt="Địa đạo Củ Chi" class="images">
-                </p>
-                <p style="text-align: center;"><em>Một phần địa đạo Củ Chi(Wikipedia)</em></p>
-
-                
-                <h2 id="pho_di_bo_h2" class="font-size">Phố đi bộ Nguyễn Huệ</h2>
-                <p>Phố đi bộ Nguyễn Huệ từ lâu đã là một điểm đến thú vị ở Sài Gòn đối với người dân bản địa và cả các du khách. Đây là một trong những địa điểm vui chơi ở Quận 1 được nhiều người ghé tới đặc biệt vào mỗi tối và dịp cuối tuần.</p>   
-                <p>Ở phố đi bộ Nguyễn Huệ, bạn sẽ có cơ hội tham gia vào các hoạt động như trình diễn thời trang, nghệ thuật đường phố, vui chơi giải trí, ẩm thực,... rất đặc sắc. Nơi đây là điểm check in hot nhất nhì Sài Thành mà bạn không thể bỏ lỡ trong chuyến du lịch Sài Gòn của mình.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Đường Nguyễn Huệ, phường Bến Nghé, quận 1.</li>
-                    <li>Giờ mở cửa: Cả ngày.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/pho_di_bo.jpg  " alt="Phố đi bộ Nguyễn Huệ" class="images">
-                </p>
-                <p style="text-align: center;"><em>Phố đi bộ Nguyễn Huệ(Wikipedia)</em></p>
-
-                <h2 id="thao_cam_vien_h2" class="font-size">Thảo Cầm Viên</h2>
-                <p>Một địa điểm du lịch thành phố Hồ Chí Minh phù hợp cho mọi lứa tuổi đó là Thảo Cầm Viên. Đây là khu bảo tồn động thực vật lớn ở trung tâm thành phố, có không gian rộng rãi với những khu vui chơi giải trí, khu nuôi dưỡng động vật hoang dã, khu trồng và chăm sóc thực vật,...rất thoáng mát.</p>   
-                <p>Thảo Cầm Viên là một trong những điểm nên đến ở Sài Gòn thích hợp để bạn khám phá các loại động thực vật quý hiếm và thư giãn sau những ồn ào ở thành phố. </p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Số 2 đường Nguyễn Bỉnh Khiêm, phường Bến Nghé, quận 1.</li>
-                    <li>Giờ mở cửa: 7h - 18h30.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/thao_cam_vien.jpg  " alt="Thảo Cầm Viên" class="images">
-                </p>
-                <p style="text-align: center;"><em>Thảo Cầm Viên(Wikipedia)</em></p>
-
-                <h2 id="bao_tang_3d_h2" class="font-size">Bảo tàng tranh 3D Artinus</h2>
-                <p>Là một bảo tàng tranh 3D lớn nhất Sài Gòn, Artinus là nơi check in cực hấp dẫn với nhiều du khách và giới trẻ Sài Thành. Bảo tàng tranh 3D Artinus có không gian kích thích sự sáng tạo ở mọi lứa tuổi qua từng khung ảnh. Bạn sẽ cảm thấy mình thật bé nhỏ khi đứng giữa những bức tranh 3D ấn tượng trong bảo tàng.</p>   
-                <p>Bên trong bảo tàng Artinus, những bức tranh 3D được sắp xếp theo 9 chủ đề khác nhau như Đại Dương, Việt Nam, Ai Cập, Tình Yêu, Thần Tiên,... Nơi đây không chỉ là một điểm check in, tham quan mà còn là địa điểm chụp ảnh cưới của rất nhiều cặp đôi sáng tạo khi đến với Artinus.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Số 2 - 4 đường số 9, khu dân cư Him Lam, phường Tân Hưng, quận 7.</li>
-                    <li>Giờ mở cửa: 9h - 22h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/bao_tang_tranh.jpg  " alt="Bảo tàng tranh 3D Artinus" class="images">
-                </p>
-                <p style="text-align: center;"><em>Bảo tàng tranh 3D Artinus(Wikipedia)</em></p>
-
-                <h2 id="toa_nha_bitexco_h2" class="font-size">Tòa nhà Bitexco</h2>
-                <p>Tòa nhà Bitexco hay còn gọi là Tháp tài chính Bitexco, đây là một trong những tòa nhà cao nhất ở thành phố Hồ Chí Minh từ những năm 2010, sau này đã có tòa tháp khác cao hơn như Landmark 81 nhưng Bitexco mãi là một trong những biểu tượng của Sài Thành, đánh dấu cho sự phát triển mới của thành phố mang tên Bác.</p>   
-                <p>Tòa nhà Bitexco có sân đậu trực thăng đầu tiên ở Việt Nam được đặt trên tầng 52, nơi đây còn là một trong những trung tâm thương mại sang trọng bậc nhất Sài Gòn. Có cơ hội ghé đến đây, bạn sẽ choáng ngợp với không gian hiện đại và sang chảnh của tòa nhà, bên cạnh đó thì bên ngoài tòa nhà cũng là một trong những background ấn tượng nhất thu hút rất nhiều giới trẻ ghé đến.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Số 19 - 25 đường Nguyễn Huệ,phường Bến Nghé, quận 1.</li>
-                    <li>Giờ mở cửa: 9h - 22h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/bitexco.jpg  " alt="Tòa nhà Bitexco" class="images">
-                </p>
-                <p style="text-align: center;"><em>Tòa nhà Bitexco(Wikipedia)</em></p>
-
-                <h2 id="cong_vien_nuoc_dam_sen_h2" class="font-size">Công viên nước Đầm Sen</h2>
-                <p>Nhắc đến du lịch Sài Gòn tất nhiên cũng phải nhắc đến công viên nước Đầm Sen - một trong các khu du lịch ở Sài Gòn được yêu thích dành cho mọi lứa tuổi. Công viên nước Đầm Sen có diện tích lên đến 3000m2, là một trong những điểm nên đến ở Sài Gòn thu hút rất nhiều người dân và du khách.</p>   
-                <p>Nơi đây được chia thành 2 khu công viên văn hóa là nơi tổ chức các sự kiện văn hóa, quảng bá, nhạc kịch,... và khu công viên nước là nơi có rất nhiều trò chơi hấp dẫn như tàu lượn siêu tốc, trượt nước, hồ bơi, nhà phao,... Ngoài ra, nơi đây còn có thủy cung là nơi sinh sống của hàng nghìn cá thể dưới nước rất thú vị.</p>
-                <p><strong>Thông tin:</strong></p>
-                <ul>
-                    <li>Địa chỉ: Số 3 đường Hòa Bình,phường 3, quận 11.</li>
-                    <li>Giờ mở cửa: 9h - 18h.</li>
-                </ul>
-                <p class="flex">
-                    <img src="images/main/cong_vien_nuoc_dam_sen.jpg  " alt="Công viên nước Đầm Sen" class="images">
-                </p>
-                <p style="text-align: center;"><em>Công viên nước Đầm Sen(Wikipedia)</em></p>
-                
-                <p>Đây là 10 địa điểm được cả người dân địa phương và những du khách thường hay quan tâm nhất khi muốn khám phá và tận hưởng du lịch ở thành phố Hồ Chí Minh.</p>
-            </div>
-        </section>
+        </section>  
+        <button href="#" id="goTopBtn" class="go-top left"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
     </main>
-    <footer>
-        <p>Nhóm 12</p>
-        <ul style="list-style: none;">
-            <li>Trần Minh Huy - 1951052077</li>
-            <li>Lê Mạnh Cường - 2051052014</li>
-        </ul>
+    <footer class="flex">
+        <div>
+            <p>Nhóm 12</p>
+            <ul style="list-style: none;">
+                <li>Trần Minh Huy - 1951052077</li>
+                <li>Lê Mạnh Cường - 2051052014</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.764168539956!2d106.68809457480339!3d10.675404689467294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1725498474511!5m2!1svi!2s" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
     </footer>
 </body>
 </html>
