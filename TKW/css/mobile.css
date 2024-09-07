@@ -1,0 +1,13 @@
+.flex {
+    flex-direction: column;
+    align-items: initial;
+}
+.map{
+    width: 100%;
+}
+.col1 {
+    width: 100%;
+}
+.col2 {
+    width: 100%;
+}

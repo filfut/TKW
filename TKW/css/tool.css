@@ -1,0 +1,45 @@
+/* Tìm kiếm */
+.input-from {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #0a6fa3;
+    border-radius: 4px;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s; 
+}
+
+.input-from:focus {
+    border-color: #0056b3;
+    outline: none; 
+}
+/*Tô màu*/
+.highlight {
+    background-color:  lightgray; /* Màu nền khi tìm thấy */
+    border-radius: 3px;
+    margin: 0 auto 20px; 
+    padding: 15px;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Go to top */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0a6fa3; 
+    color: white;   
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.go-top:hover {
+    background-color: #0056b3; 
+}
+

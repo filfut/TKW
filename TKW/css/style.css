@@ -1,0 +1,166 @@
+/* Tổng quan */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Menu */
+header.background {
+    background: linear-gradient(#0a6fa3, #87CEEB); /* Gradient cho header */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Căn giữa nội dung và đẩy item ra ngoài cùng bên phải */
+}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu > li {
+    position: relative; 
+}
+
+ul.menu > li > a {
+    width: 100%;
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+ul.menu > li > a:hover {
+    background-color: #0a6fa3;
+    color: #ddd;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #0a6fa3;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+}
+
+.submenu > li > a {
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #0a6fa3;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu > li > a:hover {
+    background-color: #e0e0e0; 
+}
+
+.sub:hover .submenu {
+    display: block;
+}
+
+/* Main */
+.style1 {
+    margin: 0 auto 20px; 
+    padding: 15px;
+    display: block;
+    overflow-x: auto;
+}
+.table {
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.list {
+    box-sizing: border-box;
+    color: rgb(51, 122, 183);
+    cursor: pointer;
+    display: list-item;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: #0a6fa3;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Chú thích hình ảnh */
+p > em {
+    font-size: 12px; 
+    color: #555; 
+}
+
+/* Chỉnh font */
+.font-size {
+    font-size: 23px;
+    color: rgb(0, 79, 140);
+    line-height: 1.4; 
+}
+
+/* Chỉnh hình */
+.images {
+    box-sizing: border-box;
+    max-width: 100%;
+    display: block; 
+    aspect-ratio: auto;
+    overflow: hidden; 
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+/*Chỉnh MAP*/
+.map {
+    margin-left: auto;
+}
+/*slider*/
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slider img {
+    width: 100%;
+    height: none;
+    display: none; /* Ẩn tất cả hình ảnh ban đầu */
+    position: absolute; /* Để các hình ảnh xếp chồng lên nhau */
+    top: 0;
+    left: 0;
+}
+
+.slider img:first-child {
+    display: block;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỏi - Đáp</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tool.css" />
+    <link rel="stylesheet" href="css/style3.css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:600px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/go_top.js"></script>
+    <script src="js/question.js" defer></script>
+</head>
+<body>
+    <header class="background flex"> 
+        <ul class="menu flex">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="sub">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <ul class="submenu menu flex">
+                    <li><a href="index2.html">Du lịch - Ăn uống</a></li>
+                    <li><a href="index3.html">Hỏi-Đáp</a></li>
+                </ul>      
+            </li> 
+        </ul>
+    </header>
+    <main>
+        <section class="style1">
+            <header>
+                <h1 class="font-size">Đặt Câu Hỏi</h1>
+                <p>Nếu bạn có những thắc mắc gì về văn hóa, địa điểm vui chơi, ăn uống, v.v. Bạn có thể đặt câu hỏi ở phía dưới và chúng tôi sẽ giúp bạn giải quyết những vấn đề đó.</p>
+            </header>
+            <section class="search-add-question">
+                <a class="insert">ĐẶT CÂU HỎI</a>
+                <div class="form">
+                    <input id="name" class="input-form" type="text" placeholder="Chủ đề" />
+                    <input id="content" class="input-form" type="text" placeholder="Câu hỏi" />
+                    <input type="button" value="Đặt câu hỏi" class="btn" id="btnAdd" />
+                </div>
+            </section>
+            <section class="questions flex">
+                <div class="question-template">
+                    <div class="question-content">
+                        <h2 class="question-name">Chủ đề</h2>
+                        <div class="question-text">Câu hỏi</div>
+                        <div class="reply-text"></div> <!-- Phần này để hiển thị câu trả lời -->
+                        <button class="reply-btn">Trả lời</button>
+                        <div class="additional-info" style="display: none;">
+                            <textarea placeholder="Nhập câu trả lời..."></textarea>
+                            <button class="btn-submit-reply">Gửi</button>
+                        </div>
+                        <a href="#" class="delete">&times;</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    
+        <button id="goTopBtn" class="go-top left"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+    </main>
+    
+    <footer class="flex">
+        <div>
+            <p>Nhóm 12</p>
+            <ul style="list-style: none;">
+                <li>Trần Minh Huy - 1951052077</li>
+                <li>Lê Mạnh Cường - 2051052014</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.764168539956!2d106.68809457480339!3d10.675404689467294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1725498474511!5m2!1svi!2s" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+    </footer>
+</body>
+</html>

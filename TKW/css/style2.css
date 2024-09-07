@@ -1,0 +1,115 @@
+/*chỉnh tab1*/
+ul.tab {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+ul.tab > li {
+    margin-right: 5px;
+}
+
+ul.tab > li > a {
+    display: block;
+    padding: 1rem;
+    background-color: #f9f9f9; 
+    text-decoration: none;
+    color: #0a6fa3; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Màu nền khi hover trên tab */
+ul.tab > li > a:hover {
+    background-color: #0a6fa3;
+    color: #f9f9f9;
+}
+
+/* Màu nền của tab đang hoạt động */
+ul.tab > li.active > a {
+    background-color: #0a6fa3; 
+    color: #ce9c9c; 
+}
+
+/* Nội dung của tab */
+.tab-content > div {
+    display: none;
+    padding: 1rem;
+}
+
+.tab-content > div.active {
+    display: block;
+}
+/* Thiết kế cho .langs */
+.langs {
+    background-color: #f9f9f9; 
+    margin-top: 20px;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+/* Tiêu đề trong .langs */
+.langs h2 {
+    font-size: 24px;
+    color: #0a6fa3; 
+    border-bottom: 2px solid #87CEEB; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.lang {
+    border-bottom: 1px solid #ddd; 
+    display: flex; 
+    align-items: flex-start;
+    padding: 10px 0; 
+}
+
+.lang:last-child {
+    border-bottom: none;
+}
+
+/* Định dạng cột hình ảnh */
+.col1 {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.col2 {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Định dạng hình ảnh */
+.lang img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    transition: transform .5s; 
+}
+
+/* Hiệu ứng khi hover trên hình ảnh */
+.lang img:hover {
+    transform: scale(1.05); 
+}
+
+/* Danh sách địa chỉ */
+.col2 h3 {
+    font-size: 18px;
+    color: #333; 
+    margin-top: 0;
+}
+
+.col2 ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.col2 li {
+    padding: 5px 0;
+    font-size: 16px; 
+    color: #555; 
+}

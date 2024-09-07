@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang tổng hợp địa điểm du lịch-ăn uống</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tool.css" />
+    <link rel="stylesheet" href="css/style2.css"/>
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:600px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/go_top.js"></script>
+    <script src="js/list_click.js"></script>
+    <script src="js/search.js"></script>
+   
+</head>
+<body>
+    <header class="background flex"> 
+        <ul class="menu flex">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="sub">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <ul class="submenu menu flex">
+                    <li><a href="index2.html">Du lịch - Ăn uống</a></li>
+                    <li><a href="index3.html">Hỏi-Đáp</a></li>
+                </ul>      
+            </li> 
+        </ul>
+        <ul class="menu flex">
+            <input class="input-form" id="searchInput" type="search" placeholder="Tìm kiếm..." />
+            <li><a href="#" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></a></li>  
+        </ul>
+    </header>
+    <main>
+        <section>
+            <ul class="tab flex">
+                <li class="active"><a href="#tab1">Du lịch</a></li>
+                <li><a href="#tab2">Ăn - uống</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab1">
+                    <section>
+                        <header>
+                            <h1 class="font-size">Giới thiệu du lịch của thành phố Hồ Chí Minh</h1>
+                        </header>
+                        <div>
+                            Hãy cùng bắt đầu khám phá mảnh đất Sài Thành cực kỳ thú vị thông qua những địa điểm du lịch nổi tiếng của thành phố Hồ Chí Minh mà bạn không nên bỏ qua!	
+                        </div>
+                        <div class="table">
+                            <h3>Mục lục các địa điểm</h3>
+                            <ul style="list-style: none;">
+                                <li class="list"><a href="#cho_ben_thanh_h2">1.Chợ Bến Thành</a></li>
+                                <li class="list"><a href="#dinh_doc_lap_h2">2.Dinh Độc Lập</a></li>
+                                <li class="list"><a href="#nha_tho_duc_ba_h2">3.Nhà thờ Đức Bà</a></li>
+                                <li class="list"><a href="#bao_tang_lich_su_vn_h2">4.Bảo tàng lịch sử Viêt Nam</a></li>
+                                <li class="list"><a href="#dia_dao_cu_chi_h2">5.Địa đạo Củ Chi</a></li>
+                                <li class="list"><a href="#pho_di_bo_h2">6.Phố đi bộ Nguyễn Huệ</a></li>
+                                <li class="list"><a href="#thao_cam_vien_h2">7.Thảo Cầm Viên</a></li>
+                                <li class="list"><a href="#bao_tang_3d_h2">8.Bảo tàng tranh 3D Artinus</a></li>
+                                <li class="list"><a href="#toa_nha_bitexco_h2">9.Tòa nhà Bitexco</a></li>
+                                <li class="list"><a href="#cong_vien_nuoc_dam_sen_h2">10.Công viên nước Đầm Sen</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div>
+                                <h2 id="cho_ben_thanh_h2" class="font-size">Chợ Bến Thành</h2>
+                                <p>Đây là một trong những địa điểm du lịch Thành phố Hồ Chí Minh nổi tiếng nhất nằm ngay trung tâm thành phố và luôn tấp nập người ra vào mua bán, du khách check in mỗi ngày.</p>
+                                <p>
+                                    <a href="index5.html">Chợ Bến Thành</a> buôn bán tất tần tật những mặt hàng từ thực phẩm, vải vóc, quần áo, đồ gia dụng, đặc sản Sài Gòn,… và quan trọng là khu ẩm thực cực kỳ hấp dẫn ở chợ và những góc check in ấn tượng sẽ làm bạn luôn muốn lưu lại nơi đây thật lâu.
+                                </p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Đường Lê Lợi, phường Bến Thành, quận 1.</li>
+                                    <li>Giờ mở cửa: 7h - 20h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner1.jpg" alt="Chợ Bến Thành" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Chợ Bến Thành(Wikipedia)</em></p>    
+                            </div>
+
+                            <div>
+                                <h2 id="dinh_doc_lap_h2" class="font-size">Dinh Độc Lập</h2>
+                                <p>
+                                    <a href="index4.html">Dinh Độc Lập</a>  hay còn gọi là hội trường Thống Nhất, đây là một công trình được xây dựng bởi người Pháp, từ thời Pháp thuộc. Đối với người dân Sài Gòn, Dinh Độc Lập là một di tích lịch sử mang ý nghĩa hòa bình và toàn vẹn lãnh thổ. Nơi đây đã được công nhận là 1 trong 10 di tích quốc gia đặc biệt của Việt Nam vào năm 2009. 
+                                </p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: 135 Đường Nam Kỳ Khởi Nghĩa, phường Bến Nghé, quận 1.</li>
+                                    <li>Giờ mở cửa: 7h30 - 11h; 13h30 - 17h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner2.jpg" alt="Dinh Độc Lập" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Dinh Độc Lập(Wikipedia)</em></p>
+                
+                            </div>
+
+                            <div>
+                                <h2 id="nha_tho_duc_ba_h2" class="font-size">Nhà thờ Đức Bà</h2>
+                                <p>
+                                    <a href="index6.html">Nhà thờ Đức Bà</a> là địa điểm du lịch thành phố Hồ Chí Minh mà bạn nhất định phải ghé đến. Nhà thờ Đức Bà là một công trình kiến trúc độc đáo mang đậm phong cách Châu Âu, là nơi sinh hoạt và tổ chức các buổi Thánh lễ cho những người theo đạo Công giáo ở Sài Thành.   
+                                </p>
+                                <p>Ghé đến tham quan nhà thờ Đức Bà, bạn có thể đến vào buổi sáng để có thể ngắm được trọn vẹn vẻ đẹp của nhà thờ dưới ánh sáng ban ngày, check in ở mọi ngóc ngách trong nhà thờ đậm chất Gothic,… đặc biệt nhà thờ luôn đón chào những du khách, người dân và bất kỳ ai đến đây để nghe giảng đạo.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: 01 Công xã Paris, phường Bến Nghé, quận 1.</li>
+                                    <li>Giờ mở cửa: 6h - 20h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner3.jpg" alt="Nhà thờ Đức Bà" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Nhà thờ Đức Bà(Wikipedia)</em></p>
+                            </div>
+
+                            <div>
+                                <h2 id="bao_tang_lich_su_vn_h2" class="font-size">Bảo tàng lịch sử Việt Nam</h2>
+                                <p>Bảo tàng lịch sử Việt Nam được xây dựng và hoạt động từ những năm đầu thế kỷ 20, là nơi lưu giữ và bảo tồn những hình ảnh, cổ vật từ thuở sơ khai đến nay. Bảo tàng lịch sử Việt Nam thu hút phần lớn những du khách yêu lịch sử và kiến trúc pha trộn giữa 2 phong cách Á – Âu độc đáo.</p>   
+                                <p>Ngoài là nơi lưu giữ nét văn hoa truyền thống của đất nước, bảo tàng lịch sử Việt Nam còn là một trong những điểm du lịch thành phố Hồ Chí Minh ấn tượng với những góc check in đẹp. Đây luôn là điểm đến thú vị trong những lịch trình của tour du lịch Hồ Chí Minh được yêu thích nhất.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Số 2 đường Nguyễn Bỉnh Khiêm, phường Bến Nghé, quận 1.</li>
+                                    <li>Giờ mở cửa: 8h - 17h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner4.jpg" alt="Bảo tàng lịch sử Việt Nam" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Bảo tàng lịch sử Việt Nam(Wikipedia)</em></p>
+                            </div>
+
+                            <div>
+                                <h2 id="dia_dao_cu_chi_h2" class="font-size">Địa đạo Củ Chi</h2>
+                                <p>
+                                    <a href="">Địa đạo Củ Chi</a>  là di tích lịch sử nằm ở ngoại ô, cách trung tâm Tp.HCM khoảng 70km. Đây là một trong những điểm nên đến ở Sài Gòn được yêu thích, đặc biệt là đối với các du khách nước ngoài.
+                                </p>
+                                <p>Nơi đây là di tích quốc gia đặc biệt, gắn liền với lịch sử chiến tranh Việt Nam, từng là căn cứ địa quan trọng và cũng là nơi sinh hoạt chung bao gồm bệnh xá, nhà bếp, nơi làm việc,… của quân đội ta trong cuộc kháng chiến chống quân xâm lược, giành lại toàn vẹn lãnh thổ.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Ấp Bến Đình, xã Nhuận Đức, huyện Củ Chi.</li>
+                                    <li>Giờ mở cửa: 8h - 17h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner5.jpg" alt="Địa đạo Củ Chi" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Một phần địa đạo Củ Chi(Wikipedia)</em></p>
+                            </div>
+
+                            <div>
+                                <h2 id="pho_di_bo_h2" class="font-size">Phố đi bộ Nguyễn Huệ</h2>
+                                <p>Phố đi bộ Nguyễn Huệ từ lâu đã là một điểm đến thú vị ở Sài Gòn đối với người dân bản địa và cả các du khách. Đây là một trong những địa điểm vui chơi ở Quận 1 được nhiều người ghé tới đặc biệt vào mỗi tối và dịp cuối tuần.</p>   
+                                <p>Ở phố đi bộ Nguyễn Huệ, bạn sẽ có cơ hội tham gia vào các hoạt động như trình diễn thời trang, nghệ thuật đường phố, vui chơi giải trí, ẩm thực,... rất đặc sắc. Nơi đây là điểm check in hot nhất nhì Sài Thành mà bạn không thể bỏ lỡ trong chuyến du lịch Sài Gòn của mình.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Đường Nguyễn Huệ, phường Bến Nghé, quận 1.</li>
+                                    <li>Giờ mở cửa: Cả ngày.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner6.jpg  " alt="Phố đi bộ Nguyễn Huệ" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Phố đi bộ Nguyễn Huệ(Wikipedia)</em></p>
+                
+                            </div>                
+
+                            <div>
+                                <h2 id="thao_cam_vien_h2" class="font-size">Thảo Cầm Viên</h2>
+                                <p>Một địa điểm du lịch thành phố Hồ Chí Minh phù hợp cho mọi lứa tuổi đó là Thảo Cầm Viên. Đây là khu bảo tồn động thực vật lớn ở trung tâm thành phố, có không gian rộng rãi với những khu vui chơi giải trí, khu nuôi dưỡng động vật hoang dã, khu trồng và chăm sóc thực vật,...rất thoáng mát.</p>   
+                                <p>Thảo Cầm Viên là một trong những điểm nên đến ở Sài Gòn thích hợp để bạn khám phá các loại động thực vật quý hiếm và thư giãn sau những ồn ào ở thành phố. </p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Số 2 đường Nguyễn Bỉnh Khiêm, phường Bến Nghé, quận 1.</li>
+                                    <li>Giờ mở cửa: 7h - 18h30.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner7.jpg  " alt="Thảo Cầm Viên" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Thảo Cầm Viên(Wikipedia)</em></p>
+                
+                            </div>
+
+                            <div>
+                                <h2 id="bao_tang_3d_h2" class="font-size">Bảo tàng tranh 3D Artinus</h2>
+                                <p>Là một bảo tàng tranh 3D lớn nhất Sài Gòn, Artinus là nơi check in cực hấp dẫn với nhiều du khách và giới trẻ Sài Thành. Bảo tàng tranh 3D Artinus có không gian kích thích sự sáng tạo ở mọi lứa tuổi qua từng khung ảnh. Bạn sẽ cảm thấy mình thật bé nhỏ khi đứng giữa những bức tranh 3D ấn tượng trong bảo tàng.</p>   
+                                <p>Bên trong bảo tàng Artinus, những bức tranh 3D được sắp xếp theo 9 chủ đề khác nhau như Đại Dương, Việt Nam, Ai Cập, Tình Yêu, Thần Tiên,... Nơi đây không chỉ là một điểm check in, tham quan mà còn là địa điểm chụp ảnh cưới của rất nhiều cặp đôi sáng tạo khi đến với Artinus.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Số 2 - 4 đường số 9, khu dân cư Him Lam, phường Tân Hưng, quận 7.</li>
+                                    <li>Giờ mở cửa: 9h - 22h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner8.jpg  " alt="Bảo tàng tranh 3D Artinus" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Bảo tàng tranh 3D Artinus(Wikipedia)</em></p>
+                
+                            </div>
+                                
+                            <div>
+                                <h2 id="toa_nha_bitexco_h2" class="font-size">Tòa nhà Bitexco</h2>
+                                <p>Tòa nhà Bitexco hay còn gọi là Tháp tài chính Bitexco, đây là một trong những tòa nhà cao nhất ở thành phố Hồ Chí Minh từ những năm 2010, sau này đã có tòa tháp khác cao hơn như Landmark 81 nhưng Bitexco mãi là một trong những biểu tượng của Sài Thành, đánh dấu cho sự phát triển mới của thành phố mang tên Bác.</p>   
+                                <p>Tòa nhà Bitexco có sân đậu trực thăng đầu tiên ở Việt Nam được đặt trên tầng 52, nơi đây còn là một trong những trung tâm thương mại sang trọng bậc nhất Sài Gòn. Có cơ hội ghé đến đây, bạn sẽ choáng ngợp với không gian hiện đại và sang chảnh của tòa nhà, bên cạnh đó thì bên ngoài tòa nhà cũng là một trong những background ấn tượng nhất thu hút rất nhiều giới trẻ ghé đến.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Số 19 - 25 đường Nguyễn Huệ,phường Bến Nghé, quận 1.</li>
+                                    <li>Giờ mở cửa: 9h - 22h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner9.jpg  " alt="Tòa nhà Bitexco" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Tòa nhà Bitexco(Wikipedia)</em></p>
+                
+                            </div>
+
+                            <div>
+                                <h2 id="cong_vien_nuoc_dam_sen_h2" class="font-size">Công viên nước Đầm Sen</h2>
+                                <p>Nhắc đến du lịch Sài Gòn tất nhiên cũng phải nhắc đến công viên nước Đầm Sen - một trong các khu du lịch ở Sài Gòn được yêu thích dành cho mọi lứa tuổi. Công viên nước Đầm Sen có diện tích lên đến 3000m2, là một trong những điểm nên đến ở Sài Gòn thu hút rất nhiều người dân và du khách.</p>   
+                                <p>Nơi đây được chia thành 2 khu công viên văn hóa là nơi tổ chức các sự kiện văn hóa, quảng bá, nhạc kịch,... và khu công viên nước là nơi có rất nhiều trò chơi hấp dẫn như tàu lượn siêu tốc, trượt nước, hồ bơi, nhà phao,... Ngoài ra, nơi đây còn có thủy cung là nơi sinh sống của hàng nghìn cá thể dưới nước rất thú vị.</p>
+                                <p><strong>Thông tin:</strong></p>
+                                <ul>
+                                    <li>Địa chỉ: Số 3 đường Hòa Bình,phường 3, quận 11.</li>
+                                    <li>Giờ mở cửa: 9h - 18h.</li>
+                                </ul>
+                                <p class="flex">
+                                    <img src="images/main/banner10.jpg  " alt="Công viên nước Đầm Sen" class="images">
+                                </p>
+                                <p style="text-align: center;"><em>Công viên nước Đầm Sen(Wikipedia)</em></p>
+                                
+                            </div>
+
+                            <p>Đây là 10 địa điểm được cả người dân địa phương và những du khách thường hay quan tâm nhất khi muốn khám phá và tận hưởng du lịch ở thành phố Hồ Chí Minh.</p>
+                        </div>
+                    </section>
+                </div>
+                <div id="tab2">
+                    <section>
+                        <header>
+                            <h1 class="font-size">Giới thiệu món ăn đặc sắc của thành phố Hồ Chí Minh</h1>
+                            <div>Thành phố Hồ Chí Minh là nơi giao thoa văn hóa ẩm thực đa sắc màu của nhiều vùng miền, là sự kết hợp của nhiều hương vị khác nhau. Đó cũng là lý do khiến khách tham quan khi đến Sài Gòn bâng khuâng suy nghĩ không biết nên ăn gì ở đây. Vậy sau đây là một số gợi ý giúp bạn khám phá thiên đường ẩm thực phong phú hội tụ đầy đủ hương vị 3 vùng miền khi bạn đặt chân đến mảnh đất mang tên Bác.</div>
+                        </header>
+                        <div class="langs">
+                            <h2>Phá lấu</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/phalau.webp" alt="Phá lấu" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ phá lấu ngon:</h3>
+                                    <ul>
+                                        <li>Phá lấu bò Cô Trâm: 208 Cây Trâm, Gò Vấp</li>
+                                        <li>Phá lấu bò Cô Thảo:  243/29G Tôn Đản, phường 15, quận 44</li>
+                                        <li>Phá lấu Dì Nủi:  30 Tôn Đản, phường 15, quận 4</li>
+                                        <li>Phá lấu DÌ Phương: 195 Bà Hạt, phường 9, quận 10</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Sủi cảo Hà Tôn Quyền</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/suicao.webp" alt="Sủi cảo" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ sủi cảo ngon đường Hà Tôn Quyền:</h3>
+                                    <ul>
+                                        <li>Sủi cảo 162: 162 Hà Tôn Quyền, phường 4, quận 11</li>
+                                        <li>Sủi cáo Thiên Thiên: Hẻm 191 Hà Tôn Quyền, Phường 4, quận 11</li>
+                                        <li>Sủi cảo Ngọc Ý: 187 Hà Tôn Quyền, phường 4, quận 11</li>
+                                        <li>Thiệu Ký mì gia: hẻm 66, Lê Đại Hành, phường 7, quận 11</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Hủ tiếu Nam Vang</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/hutieu.webp" alt="Hủ tiếu Nam Vang" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ hủ tiếu Nam Vang:</h3>
+                                    <ul>
+                                        <li>Hủ tiếu Nam Vang Đạt Thành:  232 Nguyễn Thị Thập, phường Bình Thuận, quận 7</li>
+                                        <li>Quán hủ tiếu Quốc Ký:  24 Ký Con, phường Nguyễn Thái Bình, quận 1</li>
+                                        <li>Hủ tiếu Nam Vang Quỳnh: số A65 Nguyễn Trãi, phường Cư Trinh ,quận 1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Bánh mì chảo</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/banhmichao.webp" alt="Bánh mì chảo" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ bánh mì chảo:</h3>
+                                    <ul>
+                                        <li>Bánh mì chảo Bami Cô Bống:  443/19A, Lê Văn Sỹ, P.12, Quận 3</li>
+                                        <li>Bánh mì chảo 176: 189 Đinh Tiên Hoàng, Đa Kao, Quận 1</li>
+                                        <li>Bánh mì chảo Xuân Lạc: 172 Hoà Hưng, Phường 13, Quận 10</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Bún đậu mắm tôm</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/bundaumamtom.webp" alt="Bún đậu mắm tôm" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ bún đậu mắm tôm:</h3>
+                                    <ul>
+                                        <li>Bún đậu mắm tôm A Chảnh: 87 Xô Viết Nghệ Tĩnh, Phường 17, Bình Thạnh</li>
+                                        <li>Hẻm Đậu: 140e Lý Chính Thắng, Phường 7, Quận 3</li>
+                                        <li>Bún đậu mắm tôm Tiến Hải: 409 Đ. Nguyễn Tri Phương, Phường 5, Quận 10</li>
+                                        <li>Bún đậu mắm tôm Mạc Văn Khoa : 253 Phan Huy Ích, Phường 12, Gò Vấp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Bò bía</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/bobia.webp" alt="Bò bía" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ bò bía:</h3>
+                                    <ul>
+                                        <li>Bò bía 1K: Khu Cư Xá Lữ Gia, quận 11</li>
+                                        <li>Bò bía Súp Cua: 287 Lê Quang Định, Phường 7, Bình Thạnh</li>
+                                        <li>Bò bía Sương Nguyệt Ánh: 93 Cách Mạng Tháng 8, quận 1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Bánh mì Sài Gòn</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/banhmiSG.webp" alt="Bánh mì Sài Gòn" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ bánh mì Sài Gòn:</h3>
+                                    <ul>
+                                        <li>Bánh mì khô bò Phương Liên: 12 Nguyễn Huy Tự, phường Đa Kao, quận 1, Tp. Hồ Chí Minh</li>
+                                        <li>Bánh mì 179: 179 Xóm Chiếu, quận 4, Tp. Hồ Chí Minh</li>
+                                        <li>Bánh mì sườn Cẩm Hường: 118B Nguyễn Thần Hiến, quận 4, Tp. Hồ Chí Minh</li>
+                                        <li>Bánh mì Huỳnh Hoa: 26 Lê Thị Riêng, phường Bến Thành, quận 1, Tp. Hồ Chí Minh</li>
+                                        <li>Bánh mì phá lấu Tâm Ký: 823 Nguyễn Trãi, phường.14, quận 5, Tp. Hồ Chí Minh</li>
+                                        <li>Bánh mì phá lấu Bà 6: 104 Hoàng Diệu, phường 12, quận 4,Tp, Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Xôi Sài Gòn</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/xoi.webp" alt="Xôi Sài Gòn" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ xôi Sài Gòn:</h3>
+                                    <ul>
+                                        <li>Xôi bình dân: 101 Vạn Kiếp, phường 3, quận Bình Thạnh, Tp. Hồ Chí Minh</li>
+                                        <li>Tõn Tẽn Food & Drink: 199 Vĩnh Viễn, phường 4, quận 10, Tp. Hồ Chí Minh</li>
+                                        <li>Xôi gà chợ Bà Chiểu: 318/1 Bùi Hữu Nghĩa, phường 1, quận Bình Thạnh, Tp. Hồ Chí Minh</li>
+                                        <li>Xôi Hường cầu Phú Xuân: 40 Huỳnh Tấn Phát, huyện Nhà Bè, Tp. Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Cơm tấm Sài Gòn</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/comtam.webp" alt="Cơm tấm Sài Gòn" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ cơm tấm Sài Gòn:</h3>
+                                    <ul>
+                                        <li>Cơm tấm Ba Ghiền: 84 Đặng Văn Ngữ, quận Phú Nhuận, Tp. Hồ Chí Minh</li>
+                                        <li>Cơm Sườn Tú Mập: 812 Sư Vạn Hạnh, phường 12, quận 10, Tp. Hồ Chí Minh</li>
+                                        <li>Cơm Nguyễn Văn Cừ: 167 Nguyễn Văn Cừ, phường 2, quận 5, Tp. Hồ Chí Minh</li>
+                                        <li>Cơm tấm Bụi Sài Gòn: 100 Thạch Thị Thanh, phường Tân Định, quận 1, TP. Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Bánh xèo</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/banhxeo.webp" alt="Bánh xèo" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ bánh xèo:</h3>
+                                    <ul>
+                                        <li>Bánh Xèo 46A: 46A Đinh Công Tráng, Phường Tân Định, Quận 1, Thành phố Hồ Chí Minh.</li>
+                                        <li>Nhà Hàng Bánh Xèo Bà Hai: 49 Nguyễn Trọng Tuyển, Phường 15, Phú Nhuận, Thành phố Hồ Chí Minh.</li>
+                                        <li>Bánh xèo tôm nhảy Thanh Diệu: 164 Nguyễn Thị Nhỏ, Phường 15, Quận 11, Thành phố Hồ Chí Minh 700000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Cafe</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/cafe.jpg" alt="Cafe" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ cafe:</h3>
+                                    <ul>
+                                        <li>Dabao Concept: 18 Tú Xương, Võ Thị Sáu, Quận 3, Thành phố Hồ Chí Minh</li>
+                                        <li>Kohi Coffee: 135 Nguyễn Đức Cảnh, Tân Phong, Quận 7, Thành phố Hồ Chí Minh</li>
+                                        <li>La Gare Coffee: 447 Nguyễn Thị Thập, Tân Phong, Quận 7, Thành phố Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Kem</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/kem.webp" alt="Kem" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ kem:</h3>
+                                    <ul>
+                                        <li>Quán Kem Nhãn Chú Tám: 2 Trương Hán Siêu, Đa Kao, Quận 1</li>
+                                        <li>Roseice Saigon: 4 Trần Hưng Đạo, phường Phạm Ngũ Lão, quận 1</li>
+                                        <li>Fanny : 29-31 Tôn Thất Thiệp, phường Bến Nghé, quận 1, Tp. Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2>Chè</h2>
+                            <div class="lang flex">
+                                <div class="col1">
+                                    <img src="images/food/che.jpg" alt="Chè" />
+                                </div>
+                                <div class="col2">
+                                    <h3>Địa chỉ chè:</h3>
+                                    <ul>
+                                        <li>Chè Mỹ: 591 Nguyễn Thị Thập, phường Tân Phong,  quận 7, Tp. Hồ Chí Minh</li>
+                                        <li>Chè Hằng: E43 Cư Xá Phú Lâm B, phường 13, quận 6, Tp. Hồ Chí Minh</li>
+                                        <li>Mr. Chè: 152 Cô Giang, phường 1, quận 1, Tp. Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <button href="#" id="goTopBtn" class="go-top left"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+    </main>
+    <footer class="flex">
+        <div>
+            <p>Nhóm 12</p>
+            <ul style="list-style: none;">
+                <li>Trần Minh Huy - 1951052077</li>
+                <li>Lê Mạnh Cường - 2051052014</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.764168539956!2d106.68809457480339!3d10.675404689467294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31753100099ce9ed%3A0xdb6079801f0735ea!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLiBI4buTIENow60gTWluaCAoY8ahIHPhu58gMyk!5e0!3m2!1svi!2s!4v1725498474511!5m2!1svi!2s" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+    </footer>
+</body>
+</html>
